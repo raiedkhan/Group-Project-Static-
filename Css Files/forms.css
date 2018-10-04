@@ -1,0 +1,151 @@
+#topbar{
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    text-shadow: 1px 1px black;
+    position: sticky;
+    top: 0;
+    font-size: 35px;
+    padding: 5px;
+    z-index: 1;
+    
+}
+#topbar p{
+    text-align: left;
+    margin : 0 0;
+    font-family: monospace;
+    padding: 0 0;
+}
+body{
+    margin: 0 0;
+}
+.sidenav{
+    height: 100%;
+    width: 200px;
+    margin-top:60px; ;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#3b3a36;
+    overflow-x: hidden;
+    padding-top: 20px;
+    float: left;
+}
+
+.sidenav a {
+    margin-top: 10px;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    
+}
+
+.sidenav a:hover {
+    background: green;
+}
+.whitespace{
+   height: 20px;
+}
+.main {
+    margin-left: 200px;
+    padding: 0px 10px;
+}
+
+.head{
+    position: sticky;
+    top: 60px;
+    width: 100%;
+    margin: 0 0;
+    font-size: 60px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    background: #e9ece5;
+}
+.square{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+    width: 400px;
+    height: 100px;
+    Background-color: #b3c2bf;
+}
+
+@media screen and (max-height: 450px)
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+@media screen and (max-height:  450px)
+{
+    .sidenav {
+        padding-top: 15px;
+        height: 70vh;
+    }
+    .sidenav a {font-size: 18px;}
+}
+@media screen and (max-height:  300px)
+{
+    .sidenav {
+        height: 50vh;
+        padding-top: 2px;
+    }
+    .sidenav a {font-size: 18px;}
+}
+i
+{
+  color: white;
+}
+i:hover
+{
+  color:black;
+}
+button
+{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+button:hover{
+    box-shadow: 3px 2px 4px rgba(0,0,0,.7);
+    cursor: pointer;
+}
+#output-example{
+    width: 980px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top:15px ;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 18px;
+    background-color:#BABDB7;
+    border-radius: 6px;
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, .4);
+}
+#bar{
+  height: 140px;
+  background-color: #4CAF50;
+  color: white;
+  text-shadow: 1px 1px black;
+  position: sticky;
+  top: 0;
+  font-size: 35px;
+  padding:10px;
+}
+#bar p{
+    letter-spacing: 2px;
+  text-align: center;
+  margin : 0 0;
+  padding: 0 0;
+  font-size: 25px;
+
+}

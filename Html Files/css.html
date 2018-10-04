@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS in HTML</title>
+  <link rel="stylesheet" type="text/css" href="../Css Files/css.css">
+</head>
+<body bgcolor="#e9ece5">
+<!-- Side nav -->
+    <div id="topbar">
+        <p>HTML Tutorials</p>
+    </div>
+<div class="sidenav">
+  <a href="..\home.html">Home</a>
+  <a href="intro.html">Introduction</a>
+  <a href="attributes.html">Attributes</a>
+  <a href="heading.html">Heading</a>
+  <a href="para.html">Paragraphs</a>
+  <a href="tables.html">Tables</a>
+  <a href="forms.html">Forms</a>
+  <a href="frames.html">Frames</a>
+  <a href="css.html">CSS in HTML</a>
+  <a href="group.html">Group Info</a>
+</div>
+<div class="whitespace">
+
+    </div>
+<!-- Page content -->
+<div class="main">
+    <h2>CSS in HTML</h2>
+    <hr>
+<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+<p>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.</p>
+<p>Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.</p>
+<p><b>There are three ways of implementing CSS in HTML</b></p>
+<i>
+<ul>
+      <li>Inline CSS</li>
+      <li>Internal CSS</li>
+      <li>External CSS</li>
+</ul></i>
+<hr>
+<h3>Inline CSS</h3>
+<p>Inline styles are placed right where you need them, next to the text or graphic you wish to decorate. You can insert inline styles anywhere in the middle of your HTML code, giving you real freedom to specify each web page element. On the other hand, this can make maintaining web pages a real chore!
+</p>
+<div class="example">
+<p>Example</p>
+<div class="codeBox">
+      <code>
+            <span class="blue">&lt;</span><span class="brown">h1</span> <span class="red">style</span><span class="blue">="color:Blue;font-size:25px;"&gt;</span>Example of Inline style<span class="blue">&lt;</span>/<span class="brown">h1</span><span class="blue">&gt;</span>
+      <br><span class="blue">&lt;</span><span class="brown">p</span> <span class="red">style</span><span class="blue">="color:red;"&gt;</span>First paragraph<span class="blue">&lt;</span><span class="brown">/p</span><span class="blue">&gt;</span>
+      <br><span class="blue">&lt;</span><span class="brown">p</span> <span class="red">style</span><span class="blue">="color:green;font-size:40px;"&gt;</span>Second paragraph<span class="blue">&lt;</span><span class="brown">/p</span><span class="blue">&gt;</span>
+      <br><span class="blue">&lt;</span><span class="brown">hr</span> <span class="red">style</span><span class="blue">="border-color:orange;"&gt;</span>
+      </code>
+</div>
+<p>Output</p>
+<div class="codeBox">
+      <h1 style="color:Blue;font-size:25px;">Example of Inline Style</h1>
+      <p style="color:red;">First paragraph</p>
+      <p style="color:green;font-size:40px;">Second paragraph</p>
+      <hr style="border-color:orange;">
+</div>
+</div>
+<br>
+<hr>
+
+<h3>Internal CSS</h3>
+<p>Internal styles are placed at the top of each web page document, before any of the content is listed. This is the next best thing to external, because they're easy to find, yet allow you to 'override' an external style sheet -- for that special page that wants to be a nonconformist!</p>
+<div class="example">
+<p>Example</p>
+<div class="codeBox">
+      <code>
+      <span class="blue">&lt;</span><span class="brown">style</span><span class="blue">&gt;</span><br><span class="brown">h1</span> {<br>&nbsp; <span class="red">color</span>: <span class="blue">maroon</span>;<br>&nbsp; <span class="red">margin-left</span>: <span class="blue">40px</span>;<br>}<br><span class="blue">&lt;/</span><span class="brown">style</span><span class="blue">&gt;</span><br>
+      <span class="blue">&lt;</span><span class="brown">h1</span><span class="blue">&gt;</span>This is a heading<span class="blue">&lt;</span>/<span class="brown">h1</span><span class="blue">&gt;</span>
+      <br><span class="blue">&lt;</span><span class="brown">p</span><span class="blue">&gt;</span>This is a paragraph.<span class="blue">&lt;</span><span class="brown">/p</span><span class="blue">&gt;</span>
+      </code>
+</div>
+<p>Output</p>
+<div class="codeBox">
+
+<h1 style="color:maroon;margin-left:40px;">This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</div>
+</div>
+
+
+<br>
+<hr>
+
+<h3>External CSS</h3>
+<p>External style sheets are separate files full of CSS instructions (with the file extension .css). When any web page includes an external stylesheet, its look and feel will be controlled by this CSS file (unless you decide to override a style using one of the above two types). This is how you change a whole website at once. And that's perfect if you want to keep up with the latest fashion in web pages without rewriting every page!</p>
+<div class="example">
+<p>styling.css</p>
+<div class="codeBox">
+      <code>
+      <span class="brown">h1</span> {<br>&nbsp; <span class="red">color</span>: <span class="blue">maroon</span>;<br>&nbsp; <span class="red">margin-left</span>: <span class="blue">40px</span>;<br>}
+            </code>
+</div>
+<p>page.html</p>
+<div class="codeBox">
+<code>
+      <span class="blue">&lt;</span><span class="brown">head</span><span class="blue">&gt;</span><br>
+<span class="blue">&lt;</span><span class="brown">link</span> <span class="red">rel</span><span class="blue">="stylesheet"</span> <span class="red">type</span><span class="blue">="text/css"</span> <span class="red">href</span><span class="blue">="styling.css"</span><span class="blue">&gt;</span>
+<span class="blue">&lt;/</span><span class="brown">head</span><span class="blue">&gt;</span>
+      <span class="blue">&lt;</span><span class="brown">h1</span><span class="blue">&gt;</span>This is a heading<span class="blue">&lt;</span>/<span class="brown">h1</span><span class="blue">&gt;</span>
+      <br><span class="blue">&lt;</span><span class="brown">p</span><span class="blue">&gt;</span>This is a paragraph.<span class="blue">&lt;</span><span class="brown">/p</span><span class="blue">&gt;</span>
+
+</code>
+
+
+</div>
+
+
+<p>Output</p>
+<div class="codeBox">
+
+<h1 style="color:maroon;margin-left:40px;">This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</div>
+</div>
+<br>
+<hr>
+<h2 style="color: black">Suggested Video:</h2><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0afZj1G0BIE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+
+
+
+
+
+<!--bottom bar-->
+<div class="endbar">
+<p>&copy;Akash Sharma 1705984</p>
+</div>
+</body>
+</html>

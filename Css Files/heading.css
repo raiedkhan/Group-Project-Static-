@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+/*Side bar*/
+#topbar{
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    text-shadow: 1px 1px black;
+    position: sticky;
+    top: 0;
+    font-size: 35px;
+    padding: 5px;
+    z-index: 1;
+    
+}
+#topbar p{
+    text-align: left;
+    margin : 0 0;
+    font-family: monospace;
+    padding: 0 0;
+}
+body{
+    margin: 0 0;
+}
+.sidenav{
+    height: 100%;
+    width: 200px;
+    margin-top:60px; ;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#3b3a36;
+    overflow-x: hidden;
+    padding-top: 20px;
+    float: left;
+}
+
+.sidenav a {
+    margin-top: 10px;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    
+}
+
+.sidenav a:hover {
+    background: green;
+}
+.whitespace{
+   height: 20px;
+}
+.main {
+    margin-left: 200px;
+    padding: 0px 10px;
+}
+.main #change-h2{
+    position: sticky;
+    top: 60px;
+    width: 100%;
+    margin: 0 0;
+    font-size: 40px;
+    font-family: monospace;
+    background: #e9ece5;
+    z-index: 2;
+}
+@media screen and (max-height: 450px)
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+@media screen and (max-height:  450px)
+{
+    .sidenav {
+        padding-top: 15px;
+        height: 70vh;
+    }
+    .sidenav a {font-size: 18px;}
+}
+@media screen and (max-height:  300px)
+{
+    .sidenav {
+        height: 50vh;
+        padding-top: 2px;
+    }
+    .sidenav a {font-size: 18px;}
+}
+html{
+    scroll-behavior: smooth;
+}
+hr{
+    width: 830px;
+    position: relative;
+    left: -100px;   
+    z-index: 0;
+}
+.main #change-h3{
+    margin-bottom: 5px;
+    padding: 5px 5;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.main .highlight{
+    background-color: #F1F1F1;
+    color: #DF3758;
+}
+.main p{
+    margin: 0 0;
+    letter-spacing: 1px;
+    font-family: roboto;
+    line-height: 30px;
+}
+.example{
+    width: 800px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-top:15px ;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #F1F1F1;
+    border-radius: 6px;
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, .4);
+}
+.editor{
+    width: 765px;
+    //height: 200px;
+    padding: 10px 10px; 
+    background-color: white;
+    border-left: 4px solid #4CAF50;
+    font-family: roboto;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 10px;
+    margin-bottom: 15px;
+}
+.editor p{
+    margin: 0 0;
+}
+button{
+    background-color: #4CAF50;
+    border: none;
+
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+button:hover{
+    box-shadow: 3px 2px 4px rgba(0,0,0,.7);
+    cursor: pointer;
+}
+
+.brown{
+    color: #A52A2A;
+}
+.blue{
+    color: #0000CD;
+}
+.orange{
+    color: #FF0000;
+}
+.output-example{
+    width: 800px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding-top:15px ;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #F1F1F1;
+    border-radius: 6px;
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, .4);
+}
+.output-editor{
+    width: 765px;
+    margin-bottom: 20px;
+    padding: 10px 10px ; 
+    background-color: white;
+    border-left: 4px solid #4CAF50;
+    font-family:serif;
+}
+.note-1{
+    background-color: #FFFFCC;
+    width: 800px;
+    border-left: 4px solid #FFEB3B;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+.clear{
+    clear: both;
+}
+#video{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+#footer{
+    width: 1000px;
+    height: 150px;
+    background-color: #4CAF50;
+    padding: 20px 20px;
+    box-shadow: 0px 1px 10px 5px rgba(0,0,0,0.7)
+}
+#footer-img{
+    margin: 10px 10px;
+    //background-color:rebeccapurple;
+    height: 70px;
+}
+#img1{
+    position: relative;
+    top:-5px;
+    left: -50px;
+}
+#img2{
+    
+}
+#img3{
+    position: relative;
+    left: 50px;
+}
+#footer-content{
+    font-size: 15px;
+    color: white;
+}
+#know-more{
+    text-decoration: none;
+}

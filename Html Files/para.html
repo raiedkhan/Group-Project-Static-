@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paragraph</title>
+  <link rel="icon" href="../images/paragraph.png" >
+  <link rel="stylesheet" type="text/css" href="../Css Files/para.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body bgcolor="#e9ece5">
+<!-- Side nav -->
+    <div id="topbar">
+        <p>Html Tutorials</p>
+    </div>
+<div class="sidenav">
+  <a href="home.html">Home</a>
+  <a href="intro.html">Introduction</a>
+  <a href="attributes.html">Attributes</a>
+  <a href="heading.html">Heading</a>
+  <a href="para.html">Paragraphs</a>
+  <a href="tables.html">Tables</a>
+  <a href="forms.html">Forms</a>
+  <a href="frames.html">Frames</a>
+  <a href="css.html">CSS in HTML</a>
+  <a href="group.html">Group Info</a>
+</div>
+<div class="whitespace"></div>
+<!-- Page content -->
+<div class="main" id="top">
+    <h1 class="head">HTML Paragraphs</h1>
+
+    <hr>
+    <p>The HTML <code>&lt;p&gt;</code> element defines a <strong>paragraph</strong>:</p>
+    <div class="example">
+        <strong>Example 1:</strong>
+        <p><code>&lt;p&gt;</code>This is a paragraph<code>&lt;/p&gt;</code></p>
+        <p><code>&lt;p&gt;</code>This is another paragraph<code>&lt;/p&gt;</code></p>
+        <a href="#output">
+           <button>Output > ></button>
+        </a>
+    </div>
+    <br>
+    <div class="panel1">
+        <p><strong>Note:</strong> Browsers automatically add some white space (a margin) before and after a paragraph.</p>
+    </div>
+    
+    <hr>
+    <h2 id="display" style="font-family: "Segoe UI",Arial,sans-serif;" >HTML Display</h2>
+    <p>You cannot be sure how HTML will be displayed.</p>
+    <p>Large or small screens, and resized windows will create different results.</p>
+    <p>With HTML, you cannot change the output by adding extra spaces or extra lines in your HTML code.</p>
+    <p>The browser will remove any extra spaces and extra lines when the page is displayed.</p>
+    <div class="example">
+        <strong>Example 2:</strong>
+        <p><code>&lt;p&gt;</code>This paragraph<br>
+        contains a lot of lines<br>
+        in the source code,<br>
+        but the browser <br>
+        ignores it.<code>&lt;/p&gt;</code></p>
+        <p><code>&lt;p&gt;</code>This paragraph<br>
+        contains&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a lot of spaces<br>
+        in the source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code,<br>
+        but the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;browser <br>
+        ignores it.<code>&lt;/p&gt;</code></p>
+        <a href="#output">
+           <button>Output > ></button>
+        </a>
+    </div>
+
+    <hr>
+    <h2 style="font-family: "Segoe UI",Arial,sans-serif;" >Don't Forget the End Tag</h2>
+    <p>Most browsers will display HTML correctly even if you forget the end tag:</p>
+    <div class="example">
+        <strong>Example 3:</strong>
+        <p><code>&lt;p&gt;</code>This is a paragraph</p>
+        <p><code>&lt;p&gt;</code>This is another paragraph</p>
+        <a href="#output">
+           <button>Output > ></button>
+        </a>
+    </div>
+    <p>The example above will work in most browsers, but do not rely on it.</p>
+     <div class="panel2">
+        <p><strong>Note:</strong>Dropping the end tag can produce unexpected results or errors.</p>
+    </div>
+
+    <hr>
+    <h2 id="break" style="font-family: "Segoe UI",Arial,sans-serif;" >HTML Line Breaks</h2>
+    <p>The HTML <code>&lt;br&gt;</code> element defines a line break.<br>
+    Use <code>&lt;br&gt;</code> if you want a line break (a new line) without starting a new paragraph:</p>
+    <div class="example1">
+        <strong>Example 4:</strong>
+        <p><code>&lt;p&gt;</code>This is <code>&lt;br&gt;</code> a paragraph <code>&lt;br&gt;</code> with line breaks.<code>&lt;/p&gt;</code></p>
+        <a href="#output2">
+           <button>Output > ></button>
+        </a>
+    </div>
+    <p>The example above will work in most browsers, but do not rely on it.</p>
+
+    <hr>
+    <h2 style="font-family: "Segoe UI",Arial,sans-serif;" >The Poem Problem</h2>
+    <p>This poem will display on a single line:</p>
+    <div class="example1">
+        <strong>Example 5:</strong>
+        <p><code>&lt;p&gt;</code>
+        <br>&nbsp;&nbsp;&nbsp;My Bonnie lies over the ocean.<br><br>
+        &nbsp;&nbsp;&nbsp;My Bonnie lies over the sea.<br><br>
+        &nbsp;&nbsp;&nbsp;My Bonnie lies over the ocean.<br><br>
+        &nbsp;&nbsp;&nbsp;Oh, bring back my Bonnie to me.<br>
+        <code>&lt;/p&gt;</code></p>
+        <a href="#output2">
+           <button>Output > ></button>
+        </a>
+    </div>
+
+    <hr>
+    <h2 id="pre" style="font-family: "Segoe UI",Arial,sans-serif;" >The HTML <code>&lt;pre&gt;</code> Element</h2>
+    <p>The HTML <code>&lt;pre&gt;</code> element defines preformatted text.</p>
+    <p>The text inside a <code>&lt;pre&gt;</code> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:
+    </p>
+    <div class="example1">
+        <strong>Example 6:</strong>
+        <p><code>&lt;pre&gt;</code>
+        <br>&nbsp;&nbsp;&nbsp;My Bonnie lies over the ocean.<br><br>
+        &nbsp;&nbsp;&nbsp;My Bonnie lies over the sea.<br><br>
+        &nbsp;&nbsp;&nbsp;My Bonnie lies over the ocean.<br><br>
+        &nbsp;&nbsp;&nbsp;Oh, bring back my Bonnie to me.<br>
+        <code>&lt;/pre&gt;</code></p>
+        <a href="#output2">
+           <button>Output > ></button>
+        </a>
+    </div><br>
+    <div id="output"></div>
+    <hr>
+    <h1 style="background:#BABDB7;width:200px;padding: 5px;box-shadow: 3px 2px 4px rgba(0, 0, 0, .4);letter-spacing: 1px;">Outputs</h1>
+      <h3>Output 1:</h3>
+      <div id=output-example>
+      <p>This is a paragraph</p>
+      <p>This is another paragraph</p>
+    </div>
+      <h3>Output 2:</h3>
+      <div id=output-example>
+      <p>This paragraph contains a lot of lines in the source code,but the browser ignores it.</p>
+      <p>This paragraph contains         a lot of spaces  in the source        code,but the         browser ignores it.</p>
+    </div>
+    <h3>Output 3:</h3>
+      <div id=output-example>
+      <p>This is a paragraph
+        <p>This is another paragraph
+    </div>
+    <div id="output2"></div>
+    <h3>Output 4:</h3>
+      <div id=output-example>
+      <p>This is <br> a paragraph <br> with line breaks.</p>
+    </div>
+    <h3>Output 5:</h3>
+      <div id=output-example>
+      <p> 
+        My Bonnie lies over the ocean.
+
+        My Bonnie lies over the sea.
+
+        My Bonnie lies over the ocean.
+
+        Oh, bring back my Bonnie to me.
+        </p>
+    </div>
+    <h3>Output 6:</h3>
+      <div id=output-example>
+      <pre> 
+        My Bonnie lies over the ocean.
+
+        My Bonnie lies over the sea.
+
+        My Bonnie lies over the ocean.
+
+        Oh, bring back my Bonnie to me.
+      </pre>
+    </div>
+    <br>
+    <hr>
+    <h2>Suggested Video:</h2>
+    <iframe width="55%" height="315" src="https://www.youtube.com/embed/7XcGoPzPBwk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
+    <p><a href="https://youtu.be/7XcGoPzPBwk" style="color: black" target="_blank">This video briefly explains about the Paragraph in Html</a></p>
+    <br>
+<div class="footer-main-div">
+  <div class="footer-social-icons">
+    <ul>
+      <li><a href="https://www.facebook.com/raied.razi" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://www.instagram.com/raiedkhan/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://plus.google.com/u/0/112309142796740487658" target="blank"><i class="fab fa-google-plus"></i></a></li>
+    </ul>
+  </div>
+  <br>
+ <div class="footer-menu-one">
+    <ul>
+      <li><a href="#top">Top</a></li>
+      <li><a href="#display">HTML Display</a></li>
+      <li><a href="#break">Line break</a></li>
+      <li><a href="#pre">Pre Element</a></li>
+    </ul>
+  </div>
+ <div class="footer-bottom">
+   <p>
+     Designed By:<a href="https://www.facebook.com/raied.razi" target="_blank">Raied Khan</a>   
+     &#169 2018 R.K.WebDevelopers
+   </p>
+ </div>
+</div>
+
+</div>
+</body>
+</html>

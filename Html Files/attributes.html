@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attributes</title>
+  <link rel="stylesheet" type="text/css" href="../Css Files/attributes.css">
+</head>
+<body bgcolor="#e9ece5">
+<!-- Side nav -->
+    <div id="topbar">
+        <p>HTML Tutorials</p>
+    </div>
+<div class="sidenav">
+  <a href="..\home.html">Home</a>
+  <a href="intro.html">Introduction</a>
+  <a href="attributes.html">Attributes</a>
+  <a href="heading.html">Heading</a>
+  <a href="para.html">Paragraphs</a>
+  <a href="tables.html">Tables</a>
+  <a href="forms.html">Forms</a>
+  <a href="frames.html">Frames</a>
+  <a href="css.html">CSS in HTML</a>
+  <a href="group.html">Group Info</a>
+</div>
+<div class="whitespace">
+
+    </div>
+<!-- Page content -->
+<div class="main">
+    <h2>Attributes</h2>
+ <p>The attributes are special words used inside the opening tag to control the element's behaviour. HTML attribute is a modifier of an HTML element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them. In HTML syntax, an attribute is added to an HTML start tag.<br>
+
+
+Some attribute types function differently when used to modify different element types. For example, the attribute name is used by several element types, but has slightly different functions in each.<br></p>
+
+The syntax for writing an attribute is as below:<br><br>
+<div class="codeBox">
+      <code>
+            <span class="blue">&lt;</span><span class="brown">element</span> <span class="red">attribute</span><span class="blue">="value"</span><span class="blue">&gt;</span>element content<span class="blue">&lt;</span><span class="brown">/element</span><span class="blue">&gt;</span>
+      </code>
+</div>
+<br><br>
+All attributes are made up of two parts:
+<ul>
+    <li>The <b>name</b> is the property you want to set.<br>For example the <b>bgcolor</b> attribute of a body tag</li>
+    <li>The <b>value</b> is what you want the value of the property to be set and always put within quotations.<br>For example <b>bgcolor="green"</b> will set green color as the background.</li>
+</ul>
+<p>Let us see the different attributes available in HTML.</p>
+
+<h3>href</h3>
+<p>An href attribute specifies the URL of the page the link goes to.</p>
+<div class="example">
+<p>Example</p>
+<div class="codeBox">
+      <code>
+            <span class="blue">&lt;</span><span class="brown">a </span><span class="red">href</span><span class="blue">="https://en.wikipedia.org/wiki/Smiley"</span><span class="blue">&gt;</span>Click here to visit another page<span class="blue">&lt;</span><span class="brown">/a</span><span class="blue">&gt;</span>
+      </code>
+</div>
+<p>Output</p>
+<div class="codeBox">
+      <a href="https://en.wikipedia.org/wiki/Smiley">Click here to visit another page</a>
+</div>
+</div>
+
+
+<h3>src</h3>
+<p>A src attribute is used to specify the location of the external source file like an image or audio.</p>
+<div class="example">
+<p>Example</p>
+<div class="codeBox">
+      <code>
+            <span class="blue">&lt;</span><span class="brown">img</span> <span class="red">src</span><span class="blue">="bob.gif"</span> <span class="red">alt</span><span class="blue">="bob"&gt;</span>
+      </code>
+</div>
+<p>Output</p>
+<div class="codeBox">
+       <img src="../images/bob.gif" alt="bob">
+</div>
+</div>
+
+<h3>width and height</h3>
+<p>The width and height attributes are used to specify the width or height of any image,canvas,iframe or video</p>
+<div class="example">
+<p>Example</p>
+<div class="codeBox">
+      <code>
+            <span class="blue">&lt;</span><span class="brown">img</span> <span class="red">src</span><span class="blue">="algo.jpg"</span> <span class="red">alt</span><span class="blue">="meme"</span> <span class="red">height</span><span class="blue">="200"</span> <span class="red">width</span><span class="blue">="450"&gt;</span>
+      </code>
+</div>
+<p>Output</p>
+<div class="codeBox">
+       <img src="../images/algo.jpg" alt="meme" height="200" width="450">
+</div>
+</div>
+
+
+<h3>alt</h3>
+<p>The alt attribute provides alternative information for an image if a user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+<div class="example">
+<p>Example</p>
+<div class="codeBox">
+      <code>
+            <span class="blue">&lt;</span><span class="brown">img</span> <span class="red">src</span><span class="blue">="meme.jpg"</span> <span class="red">alt</span><span class="blue">="A funny Meme"</span> <span class="red">height</span><span class="blue">="200"</span> <span class="red">width</span><span class="blue">="450"&gt;</span>
+      </code>
+</div>
+<p>Output</p>
+<div class="codeBox">
+       <img src="meme.jpg" alt="A funny Meme" height="200" width="450">
+</div>
+</div>
+
+<h3>style</h3>
+<p>In Inline styling, the CSS rules are directly written inside the starting tag using the style attribute. The style attribute includes a series of CSS property and value pairs. Each <b>'property : value'</b> pair is separated by a semicolon.</p>
+<div class="example">
+<p>Example</p>
+<div class="codeBox">
+      <code>
+            <span class="blue">&lt;</span><span class="brown">h1</span> <span class="red">style</span><span class="blue">="color:Blue;font-size:25px;"&gt;</span>Example of Inline style<span class="blue">&lt;</span>/<span class="brown">h1</span><span class="blue">&gt;</span>
+      <br><span class="blue">&lt;</span><span class="brown">p</span> <span class="red">style</span><span class="blue">="color:red;"&gt;</span>First paragraph<span class="blue">&lt;</span><span class="brown">/p</span><span class="blue">&gt;</span>
+      <br><span class="blue">&lt;</span><span class="brown">p</span> <span class="red">style</span><span class="blue">="color:green;font-size:40px;"&gt;</span>Second paragraph<span class="blue">&lt;</span><span class="brown">/p</span><span class="blue">&gt;</span>
+      <br><span class="blue">&lt;</span><span class="brown">hr</span> <span class="red">style</span><span class="blue">="border-color:orange;"&gt;</span>
+      </code>
+</div>
+<p>Output</p>
+<div class="codeBox">
+      <h1 style="color:Blue;font-size:25px;">Example of Inline Style</h1>
+      <p style="color:red;">First paragraph</p>
+      <p style="color:green;font-size:40px;">Second paragraph</p>
+      <hr style="border-color:orange;">
+</div>
+</div>
+
+
+<h3>type</h3>
+<div class="example">
+<p>Example</p>
+<div class="codeBox">
+      <code>
+            <span class="blue">&lt;</span><span class="brown">form</span><span class="blue">&gt;</span><br>
+            Username: <span class="blue">&lt;</span><span class="brown">input</span> <span class="red">type</span><span class="blue">="text"&gt;</span>
+            <span class="blue">&lt;</span><span class="brown">br</span><span class="blue">&gt;</span><br>
+            <span class="blue">&lt;</span><span class="brown">input</span> <span class="red">type</span><span class="blue">="submit"&gt;</span>
+            </code>
+</div>
+<p>Output</p>
+<div class="codeBox">
+      <form>
+            Username: <input type="text"><br>
+            <input type="submit">
+      </form>
+</div>
+</div>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jlpkV3oY5-A?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<br>
+<!--bottom bar-->
+</div>
+<div class="endbar">
+<p>&copy;Akash Sharma 1705984</p>
+</div>
+</body>
+</html>

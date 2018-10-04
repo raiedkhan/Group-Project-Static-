@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frames</title>
+  <link rel="stylesheet" type="text/css" href="../Css Files/frame.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body bgcolor="#e9ece5">
+<!-- Side nav -->
+    <div id="topbar">
+        <p>HTML Tutorials</p>
+    </div>
+<div class="sidenav">
+  <a href="..\home.html">Home</a>
+  <a href="intro.html">Introduction</a>
+  <a href="attributes.html">Attributes</a>
+  <a href="heading.html">Heading</a>
+  <a href="para.html">Paragraphs</a>
+  <a href="tables.html">Tables</a>
+  <a href="forms.html">Forms</a>
+  <a href="frames.html">Frames</a>
+  <a href="css.html">CSS in HTML</a>
+  <a href="group.html">Group Info</a>
+</div>
+<div class="whitespace">
+
+    </div>
+<!-- Page content -->
+<div class="main">
+<html>
+<head>
+<title>Frames in Html</title>
+</head>
+<h2>Frames In HTML</h2><hr>
+<p>
+HTML <b>frames</b> allow webpage designers to present documents in multiple views, which may be independent windows or subwindows. Multiple views offer designers a way to keep certain information visible, while other views are scrolled or replaced. For example, within the same window, one <b>frame</b> might display a static banner, a second a navigation menu, and a third the main document that can be scrolled through or replaced by navigating in the second <b>frame</b>.
+</p>
+<b>Here is the simple frame layout:</b><br>
+<div class="square"><pre>
+<font size="3px">&ltHTML&gt
+&ltHEAD&gt
+&ltTITLE&gtA simple frameset document&lt/TITLE&gt
+&lt/HEAD&gt
+&ltFRAMESET cols="20%, 80%"&gt
+  &ltFRAMESET rows="100, 200"&gt
+      &ltFRAME src="frame1.html"&gt
+      &ltFRAME src="frame2.html"&gt
+  &lt/FRAMESET&gt
+  &ltFRAME src="frame3.html"&gt
+&lt/FRAMESET&gt
+&lt/HTML&gt</font></pre></div>
+<br>
+<b>The frame may look like this:</b><br>
+<pre>
+ ---------------------------------------
+|         |                             |
+|         |                             |
+| Frame 1 |                             |
+|         |                             |
+|         |                             |
+|---------|                             |
+|         |          Frame 3            |
+|         |                             |
+|         |                             |
+|         |                             |
+| Frame 2 |                             |
+|         |                             |
+|         |                             |
+|         |                             |
+|         |                             |
+ ---------------------------------------
+</pre>
+<hr>
+<font size="5px"><b>&ltFrameset&gt</b></font>
+<p>
+The <b>&ltframeset&gt</b> tag defines a frameset.
+
+The <b>&ltframeset&gt</b> element holds one or more <b>&ltframe&gt</b> elements. Each <b>&ltframe&gt</b> element can hold a separate document.
+
+The <b>&ltframeset&gt</b> element specifies how many columns or rows there will be in the frameset, and how much percentage/pixels of space will occupy each of them.
+It can't be used inside the &ltbody&gt.
+</p>
+<hr>
+<font size="5px"><b>&ltFrame&gt</b></font>
+<p>The <b>&ltframe&gt</b> defines one particular window (frame) within a frameset.</p>
+<hr>
+<font size="5px"><b>Attributes Under Frames</b></font><br><br>
+<table cellspacing=6 cellpadding=6>
+<tr class="d0">
+<td><b>Attribute</b></td>
+<td><b>Value</b></td>
+<td><b>Description</b></td>
+</tr>
+<tr class="d1">
+<td>frameborder</td>
+<td>0,1</td>
+<td>Specifies whether or not to display a border around a frame.</td>
+</tr>
+<tr class="d0">
+<td>marginheight</td>
+<td>pixels</td>
+<td> Specifies the top and bottom margins of a frame.</td>
+</tr>
+<tr class="d1">
+<td>marginwidth</td>
+<td>pixels</td>
+<td>Specifies the left and right margins of a frame.</td>
+</tr>
+<tr class="d0">
+<td>name</td>
+<td> text</td>
+<td>Specifies the name of a frame.</td>
+</tr>
+<tr class="d1">
+<td>noresize</td>
+<td>noresize</td>
+<td>Specifies that a frame is not resizable.</td>
+</tr>
+<tr class="d0">
+<td>scrolling</td>
+<td>yes,no,auto</td>
+<td>Specifies whether or not to display scrollbars in a frame.</td>
+</tr>
+<tr class="d1">
+<td>src</td>
+<td>URL</td>
+<td>Specifies the URL of the document to show in a frame.</td>
+</tr>
+<tr class="d0">
+<td>cols</td>
+<td>pixels,%,*</td>
+<td>Specifies the number and size of columns in a frameset.</td>
+</tr>
+<tr class="d1">
+<td>rows</td>
+<td>pixels,%,*</td>
+<td>Specifies the number and size of rows in a frameset.</td>
+</tr>
+</table>
+<hr>
+<b><font size="5px">Rows and Columns (Attributes of the &ltFrameset&gt)</font></b>
+<p>
+Setting the <b>rows</b> attribute defines the number of horizontal subspaces in a frameset. Setting the <b>cols</b> attribute defines the number of vertical subspaces.
+
+If the <b>rows</b> attribute is not set, each column extends the entire length of the page. If the <b>cols</b> attribute is not set, each row extends the entire width of the page. If neither attribute is set, the frame takes up exactly the size of the page.
+
+Frames are created left-to-right for columns and top-to-bottom for rows. When both attributes are specified, views are created left-to-right in the top row, left-to-right in the second row, etc.<br><br>
+
+The first example divides the screen vertically in two (i.e., creates a top half and a bottom half).</p>
+
+<div class="rectangle"><pre>&ltFRAMESET rows="50%, 50%"&gt
+...the rest of the definition...
+&lt/FRAMESET&gt</pre></div>
+<p>The next example creates three columns: the second has a fixed width of 250 pixels (useful, for example, to hold an image with a known size). The first receives 25% of the remaining space and the third 75% of the remaining space.
+</p>
+<div class="rectangle"><pre>&ltFRAMESET cols="1*,250,3*"&gt
+...the rest of the definition...
+&lt/FRAMESET&gt</pre></div><br>
+<div class="yellow-background">
+<u><b>Note</b></u>:<br><i>Absolute lengths that do not sum to 100% of the real available space should be adjusted by the user agent. When underspecified, remaining space should be allotted proportionally to each view. When overspecified, each view should be reduced according to its specified proportion of the total space.
+</i></div><hr>
+<b><font size="5px">How to use <i>&ltFrameset&gt</i> and <i>&ltFrame&gt</i> to create different types of framesets.</b><br></font>
+<ol>
+<li><font size="4px"><b><i><u>Creating Vertical Columns:</u></i></b></font>
+<div class="square"><pre><font size="3px">&lthtml&gt
+&ltframeset cols="*,*,*,*"&gt
+    &ltframe src="frame_1.html"&gt
+    &ltframe src="frame_2.html"&gt
+    &ltframe src="frame_3.html"&gt
+    &ltframe src="frame_4.html"&gt
+&lt/frameset&gt
+&lt/html&gt</pre></font></div><br><br>
+<b><font size="4px">And here's how frameset will look like:</b></font><br>
+<img src="../images/columns.jpg"><br>
+<b><font size="4px">Frames arranged into columns.</b></font><br><hr>
+<li><font size="4px"><b><i><u>Creating Horizontal Rows:</u></i></b></font>
+<div class="square"><pre><font size="3px">&lthtml&gt
+&ltframeset rows="*,*,*,*"&gt
+    &ltframe src="frame_1.html"&gt
+    &ltframe src="frame_2.html"&gt
+    &ltframe src="frame_3.html"&gt
+    &ltframe src="frame_4.html"&gt
+&lt/frameset&gt
+&lt/html&gt</pre></font></div><br>
+<b><font size="4px">And here's how frameset will look like:</b></font><br>
+<img src="../images/rows1.jpg"><br>
+<b><font size="4px">Frames arranged into rows.</b></font><br><hr>
+<li><font size="4px"><b><i><u>Nesting of frames:</u></i></b></font><br>
+ <p><b>Columns</b> and <b>rows</b> of frames can both appear on the same webpage by nesting one frameset inside of another. To do this, we first create a frameset and then nest a child frameset within the parent element. Here's an example of how we could nest two rows within a set of three columns.</p>
+<div class="square"><pre>
+<font size="3px">&lthtml&gt
+&ltframeset cols="*,*,*"&gt
+    &ltframeset rows="*,*"&gt
+        &ltframe src="frame_1.html"&gt
+        &ltframe src="frame_2.html"&gt
+    &lt/frameset&gt
+    &ltframe src="frame_3.html"&gt
+    &ltframe src="frame_4.html"&gt
+&lt/frameset&gt
+&lt/html&gt</pre></font></div><br>
+<b><font size="4px">Here's the result of the above code:</b></font><br><br>
+<img src="../images/mixed_frames1.jpg"><br>
+<b><font size="4px">So the frames are nested.</b></font></ol><hr>
+<font size="5px"><b>&ltNoFrames&gt</b></font>
+<p>The <b>&ltnoframes&gt</b> tag specifies fallback content that should be displayed only by the browsers that do not support frames or are configured not to display frames. It can contain all the HTML elements that can be placed inside the &ltbody&gt element of a normal HTML page.</p>
+<font size="4px"><b>For Example:</b></font><br>
+<div class="square">
+<font size="3px"><pre>
+&lthtml&gt
+
+&ltframeset cols="25%,50%,25%"&gt
+  &ltframe src="frame_a.html"&gt
+  &ltframe src="frame_b.html"&gt
+  &ltframe src="frame_c.html"&gt
+&ltnoframes&gt
+Sorry,your browser does not handle frames!
+&lt/noframes&gt
+&lt/frameset&gt
+
+&lt/html&gt</font></div><br>
+
+<div class="yellow-background">
+<b><u>Note:</u></b><br>
+If your browser doesn't support the frames or are configured not to display frames,then only the statement i.e."<b>Sorry your browser does not handle frames!</b>" within the <b>&ltnoframes&gt</b>, in this example will be executed.
+</div><br>
+<div class="footer-main-div">
+<div class="footer-social-icons">
+<ul>
+<li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#" target="blank"><i class="fa fa-google-plus"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>Designed by:<a href="#"><i>Harsh Anant &copy 2018</i></a></p>
+
+</div>
+</body>
+</html>

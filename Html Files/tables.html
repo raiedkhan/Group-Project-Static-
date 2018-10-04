@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Tables</title>
+  <link rel="stylesheet" type="text/css" href="../Css Files/tables.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+      .highlight{
+              background-color: #F1F1F1;
+              color: #DC143C;
+              font-weight: bold;
+            }
+      .example{
+              width: 800px;
+              //height: 100px;
+              background-color: #F1F1F1;
+              border-radius: 5px;
+              //box-shadow: 50px 1px black;
+              padding:10px 10px;
+
+            }
+            .example h3{
+              margin: 0 0;
+            }
+            .example2{
+              width: 800px;
+              background-color:#FFFFCC;
+              border-radius:px;
+              padding:10px 10px;
+              border-left:4px solid #FFEB3B;
+            }
+                   .editor{
+              background-color: white;
+              width: 780px;
+              margin: 10px 0;
+              padding: 10px;
+              border-left: 4px solid #4CAF50;
+            }
+            .button-class{
+              background-color: #4CAF50;
+              //height: 50px;
+              padding: 0;
+        border: none;
+        //background: none;
+        color: white;
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 50px;
+            }
+            .button-class:hover{
+              cursor: pointer;
+            }
+        .end{
+          background-color:#4CAF50;
+          color:white;
+        }
+       .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.4;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+  </style>
+</head>
+<body bgcolor="#e9ece5">
+<!-- Side nav -->
+    <div id="topbar">
+        <p>HTML Tutorials</p>
+    </div>
+<div class="sidenav">
+  <a href="..\home.html">Home</a>
+  <a href="intro.html">Introduction</a>
+  <a href="attributes.html">Attributes</a>
+  <a href="heading.html">Heading</a>
+  <a href="para.html">Paragraphs</a>
+  <a href="tables.html">Tables</a>
+  <a href="forms.html">Forms</a>
+  <a href="frames.html">Frames</a>
+  <a href="css.html">CSS in HTML</a>
+  <a href="group.html">Group Info</a>
+</div>
+<div class="whitespace">
+
+    </div>
+<!-- Page content -->
+<div class="main">
+    <h2>HTML Tables</h2>
+
+    <h1>Defining an HTML Table</h1>
+  <p>An HTML table is defined with the <span class="highlight">&lt;table&gt;</span> tag.</p>
+  <p>
+    Each table row is defined with the <span class="highlight">&lt;tr&gt;</span> tag. A table header is defined with the <span class="highlight">&lt;th&gt;</span> tag. By default, table headings are bold and centered. A table data/cell is defined with the <span class="highlight">&lt;th&gt;</span> tag.
+  </p>
+    <div class="example">
+              <h3>Example 1</h3>
+              <div class="editor">
+             <pre>
+&lt;table style="width:100%"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Firstname&lt;/th&gt;
+    &lt;th&gt;Lastname&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Jill&lt;/td&gt;
+    &lt;td&gt;Smith&lt;/td&gt;
+    &lt;td&gt;50&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Eve&lt;/td&gt;
+    &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;td&gt;94&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+             </pre>
+              </div>
+
+              <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic" target="_blank"><button class="button-class">Try it Yourself >></button></a>
+            </div>
+            <p>
+
+            </p>
+    <div class="example2">
+      <b>NOTE:</b> The <span class="highlight">&lt;td&gt;</span> elements are the data containers of the table.<br>
+They can contain all sorts of HTML elements; text, images, lists, other tables, etc.
+    </div>
+    <hr>
+    <h1>HTML Table - Adding a Border</h1>
+     <p>If you do not specify a border for the table, it will be displayed without borders.<br></p>
+     <p>A border is set using the <span class="highlight">CSS</span> border property:</p>
+     <div class="example">
+      <h3>Example</h3>
+      <div class="editor">
+       <pre>
+table, th, td {
+    border: 1px solid black;
+}
+       </pre>
+      </div>
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic" target="_blank"><button class="button-class">Try it Yourself >></button></a>
+     </div>
+     <p>
+
+     </p>
+     <div class="example2">
+     Remember to define borders for both the table and the table cells.
+     </div>
+     <hr>
+      <h1>HTML Table - Collapsed Borders</h1>
+      <p>If you want the borders to collapse into one border, add the CSS <span class="highlight">border-collapse<span> property:</p>
+     <div class="example">
+      <h3>Example</h3>
+      <div class="editor">
+       <pre>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+       </pre>
+      </div>
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic" target="_blank"><button class="button-class">Try it Yourself >></button></a>
+     </div>
+     <hr>
+     <h1>HTML Table - Adding Cell Padding</h1>
+    <p>Cell padding specifies the space between the cell content and its borders.</p>
+    <p>If you do not specify a padding, the table cells will be displayed without padding.</p>
+    <p>To set the padding, use the CSS <span class="highlight">padding</span> property:</p>
+    <div class="example">
+      <h3>Example</h3>
+      <div class="editor">
+        <pre>
+th, td {
+    padding: 15px;
+}
+        </pre>
+      </div>
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic" target="_blank"><button class="button-class">Try it Yourself >></button></a>
+    </div>
+    <hr>
+    <h1>HTML Table - Left-align Headings</h1>
+    <p>By default, table headings are bold and centered.</p>
+    <p>To left-align the table headings, use the CSS <span class="higjlight">text-align</span> property:</p>
+    <div class="example">
+      <h3>Example</h3>
+      <div class="editor">
+        <pre>
+th {
+    text-align: left;
+}
+        </pre>
+      </div>
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic" target="_blank"><button class="button-class">Try it Yourself >></button></a>
+    </div>
+    <hr>
+    <h1>HTML Table - Adding Border Spacing</h1>
+    <p>Border spacing specifies the space between the cells.</p>
+    <p>To set the border spacing for a table, use the CSS <span class="highlight">border-spacing</span> property:</p>
+    <div class="example">
+      <h3>Example</h3>
+      <div class="editor">
+        <pre>
+table {
+    border-spacing: 5px;
+}
+        </pre>
+      </div>
+       <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic" target="_blank"><button class="button-class">Try it Yourself >></button></a>
+    </div>
+    <p>
+    </p>
+    <div class="example2">
+      <b>Note:</b> If the table has collapsed borders, <span class="highlight">border-spacing</span> has no effect.
+    </div>
+    <hr>
+    <h1>HTML Table - Cells that Span Many Columns</h1>
+    <p>To make a cell span more than one column, use the <span class="highlight">colspan</span> attribute:</p>
+    <div class="example">
+      <h3>Example</h3>
+      <div class="editor">
+        <pre>
+&lt;table style="width:100%"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th colspan="2"&gt;Telephone&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Bill Gates&lt;/td&gt;
+    &lt;td&gt;55577854&lt;/td&gt;
+    &lt;td&gt;55577855&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+        </pre>
+      </div>
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic" target="_blank"><button class="button-class">Try it Yourself >></button></a>
+    </div>
+    <hr>
+    <h1>HTML Table - Cells that Span Many Rows</h1>
+    <p>To make a cell span more than one row, use the <span class="highlight">rowspan</span> attribute:</p>
+    <div class="example">
+      <h3>Example</h3>
+      <div class="editor">
+        <pre>
+&lt;table style="width:100%"&gt;
+  &lt;tr&gt;
+    &lt;th>Name:&lt;/th&gt;
+    &lt;td>Bill Gates&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th rowspan="2"&gt;Telephone:&lt;/th&gt;
+    &lt;td&gt;55577854&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;55577855&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+          </pre>
+      </div>
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic" target="_blank"><button class="button-class">Try it Yourself >></button></a>
+    </div>
+    <br>
+    <h1>HTML Table - Adding a Caption</h3>
+    <p>To add a caption to a table, use the <span class="highlight">&lt;caption&gt;</span> tag:</p>
+    <div class="example">
+      <h3>Example</h3>
+      <div class="editor">
+        <pre>
+&lt;table style="width:100%"&gt;
+  &lt;caption>Monthly savings&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;February&lt;/td&gt;
+    &lt;td&gt;$50&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+        </pre>
+      </div>
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic" target="_blank"><button class="button-class">Try it Yourself >></button></a>
+    </div>
+    <p></p>
+    <div class="example2">
+      <b>Note:</b> The <span class="highlight">&lt;caption&gt;</span> tag must be inserted immediately after the <span class="highlight">&lt;table&gt;</span> tag.
+    </div>
+    <hr>
+    <h1>A Special Style for One Table</h1>
+    <p>To define a special style for a special table, add an <span class="highlight">id</span> attribute to the table:</p>
+    <div class="example">
+      <h3>Example</h3>
+      <div class="editor">
+      <pre>
+&lt;table id="t01"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Firstname&lt;/th&gt;
+    &lt;th&gt;Lastname&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Eve&lt;/td&gt;
+    &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;td&gt;94&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+      </pre>
+      </div>
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic" target="_blank"><button class="button-class">Try it Yourself >></button></a>
+    </div>
+    <p>
+
+    </p>
+    <div class="example">
+      <h3>Now you can define a special style for this table:</h3>
+      <div class="editor">
+      <pre>
+table#t01 {
+  width: 100%;
+    background-color: #f1f1c1;
+}
+      </pre>
+      </div>
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic" target="_blank"><button class="button-class">Try it Yourself >></button></a>
+    </div>
+    <p></p>
+    <div class="example">
+      <h3>And add more styles:</h3>
+      <div class="editor">
+      <pre>
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+table#t01 th {
+    color: white;
+    background-color: black;
+}
+      </pre>
+      </div>
+      <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic" target="_blank"><button class="button-class">Try it Yourself >></button></a>
+    </div>
+    <hr>
+    <h1>Chapter Summary</h1>
+    <ul>
+      <li>Use the HTML <span class="highlight">&lt;table&gt;</span> element to define a table</li>
+      <li>Use the HTML <span class="highlight">&lt;tr&gt;</span> element to define a table row</li>
+      <li>Use the HTML <span class="highlight">&lt;td&gt;</span> element to define a table data</li>
+      <li>Use the HTML <span class="highlight">&lt;th&gt;</span> element to define a table heading</li>
+      <li>Use the HTML <span class="highlight">&lt;caption&gt;</span> element to define a table caption</li>
+      <li>Use the CSS <span class="highlight">border</span> property to define a border</li>
+      <li>Use the CSS <span class="highlight">border-collapse</span> property to collapse cell borders</li>
+      <li>Use the CSS <span class="highlight">padding</span> property to add padding to cells</li>
+      <li>Use the CSS <span class="highlight">text-align</span> property to align cell text</li>
+      <li>Use the CSS <span class="highlight">border-spacing</span> property to set the spacing between cells</li>
+      <li>Use the <span class="highlight">colspan</span> attribute to make a cell span many columns</li>
+      <li>Use the <span class="highlight">rowspan</span> attribute to make a cell span many rows</li>
+      <li>Use the <span class="highlight">id</span> attribute to uniquely define one table</li>
+    </ul>
+    <hr>
+    <p>
+    </p>
+    <div>
+      <h1>Relevant Videos</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HPpjaz5xRAQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><p></p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/BczLWImAmBk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="end">
+      <center><a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+       <a href="https://twitter.com/login?lang=en" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.google.com/gmail/" target="_blank" class="fa fa-google"></a></center><br>
+      <center> Designed By : Gulam Md. Yasin &copy; 2018</center>
+    </div>
+    <p></p>
+</div>
+</body>
+</html>

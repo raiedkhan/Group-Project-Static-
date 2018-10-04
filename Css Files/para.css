@@ -1,0 +1,238 @@
+#topbar{
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    text-shadow: 1px 1px black;
+    position: sticky;
+    top: 0;
+    font-size: 35px;
+    padding: 5px;
+    
+}
+#topbar p{
+    text-align: left;
+    margin : 0 0;
+    font-family: monospace;
+    padding: 0 0;
+}
+body{
+    margin: 0 0;
+}
+.sidenav{
+    height: 100%;
+    width: 200px;
+    margin-top:60px; ;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#3b3a36;
+    overflow-x: hidden;
+    padding-top: 20px;
+    float: left;
+}
+
+.sidenav a {
+    margin-top: 10px;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    
+}
+
+.sidenav a:hover {
+    background: green;
+}
+.whitespace{
+   height: 10px;
+}
+.main {
+    font-family: Verdana,sans-serif;
+    margin-left: 200px;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+.head{
+    position: sticky;
+    top: 60px;
+    width: 100%;
+    margin: 0 0;
+    font-size: 60px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    background: #e9ece5;
+}
+@media screen and (max-height: 450px)
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+@media screen and (max-height:  450px)
+{
+    .sidenav {
+        padding-top: 15px;
+        height: 70vh;
+    }
+    .sidenav a {font-size: 18px;}
+}
+@media screen and (max-height:  300px)
+{
+    .sidenav {
+        height: 50vh;
+        padding-top: 2px;
+    }
+    .sidenav a {font-size: 18px;}
+}
+
+.panel1
+{
+    background:#FFFF99;
+    margin-right:5%;
+    padding: 3px;
+}
+.panel2
+{
+    background:#FFFF99;
+    margin-right:30%;
+    padding: 3px;
+}
+.example
+{
+    background:#BABDB7;
+    margin-right: 50%;
+    padding: 10px;
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, .4);
+}
+.example1
+{
+    background:#BABDB7;
+    margin-right: 45%;
+    padding: 10px;
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, .4);
+}
+hr
+{
+  border-color:#BABDB7;
+  margin-right: 5%;
+}
+
+
+.footer-main-div
+{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background:#4CAF50;
+  padding: 20px 0px;
+}
+.footer-social-icons
+{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.footer-social-icons ul
+{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.footer-social-icons ul li
+{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin:0px 20px;
+  border-radius: 100%;
+  background:white;
+}
+.footer-social-icons ul li a
+{
+  color: #4CAF50;
+  font-size: 25px;
+  display: block;
+}
+.footer-social-icons ul li a i
+{
+  line-height: 50px;
+}
+.footer-menu-one
+{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.footer-menu-one ul
+{
+  margin: 0px;
+  padding: 0px;
+  text-align: center; 
+}
+.footer-menu-one ul li
+{
+   display: inline-block;
+   margin: 0px 30px;
+}
+.footer-menu-one ul li a
+{
+  font-family: arial;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+a
+{
+  text-decoration: none;
+  outline: none;
+}
+.footer-bottom
+{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background:#4CAF50;
+  text-align: center;
+  font-family: arial;
+  font-size: 30px;
+  color: white;
+}
+.footer-bottom a
+{
+  color: #ffff;
+}
+.footer-social-icons ul li:hover
+{
+  background: black;
+}
+button
+{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+button:hover{
+    box-shadow: 3px 2px 4px rgba(0,0,0,.7);
+    cursor: pointer;
+}
+#output-example{
+    width: 980px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top:15px ;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 18px;
+    background-color:#BABDB7;
+    border-radius: 6px;
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, .4);
+}
+

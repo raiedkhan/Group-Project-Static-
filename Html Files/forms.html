@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Html Forms</title>
+  <link rel="stylesheet" type="text/css" href="../Css Files/forms.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body bgcolor="#e9ece5">
+<!-- Side nav -->
+    <div id="topbar">
+        <p>HTML Tutorials</p>
+    </div>
+<div class="sidenav">
+  <a href="..\home.html">Home</a>
+  <a href="intro.html">Introduction</a>
+  <a href="attributes.html">Attributes</a>
+  <a href="heading.html">Heading</a>
+  <a href="para.html">Paragraphs</a>
+  <a href="tables.html">Tables</a>
+  <a href="forms.html">Forms</a>
+  <a href="frames.html">Frames</a>
+  <a href="css.html">CSS in HTML</a>
+  <a href="group.html">Group Info</a>
+</div>
+<div class="whitespace">
+
+    </div>
+<!-- Page content -->
+<div class="main">
+    <h2 class="head">Html Forms</h2>
+		<hr width=280%>
+HTML Forms are required to collect different kinds of user inputs, such as contact details like name, email address, phone numbers, or details like credit card information, etc.<br>
+<br>
+
+<p style="font-size=110%;">The &lt;form&gt; tag is used to create an HTML form. Here's a simple example of a login form:</p>
+   <div class="square">
+	 &lt;form&gt;<br>
+	 .<br>
+	 .<br>
+	 <i>form element</i>
+	 .<br>
+	 .<br>
+   &lt;form&gt;<br>
+ </div>
+<hr width=280%>
+ <div>
+	 <h3><u>Input Element</u></h3>
+		<p> The &lt;input&gt; element is the most important form element.</p>
+	<p>	The &lt;input&gt; element can be displayed in several ways, depending on the type attribute.</p>
+	<p>Some examples are</p>
+	<table border=1px cellspacing="10px" celpadding="20px">
+	<pre>	<th>TYPE   </th>
+		<th>   DESCRIPTION </th> </pre>
+		<tr>
+		<td>	&lt;input type="text"&gt;
+    <td>Single line text input
+		</tr>
+		<td>	&lt;input type="radio"&gt;
+    <td>Defines radio button to select one of many choices
+		</tr>
+		<td>	&lt;input type="checkbox"&gt;
+    <td>Allows the user to select one or more options
+    </select>
+		</tr>
+		<td>	&lt;input type="password"&gt;
+    <td>Characters in a a passwordfield are masked
+		</tr>
+		<td>	&lt;input type="submit"&gt;
+		<td>Defines a submit button for submiting the form
+		</tr>
+			</table>
+	 </div>
+	 <hr width=280%>
+<div>
+	<h3><u>Text Input</u></h3>
+		<p>&lt;input type="text"&gt; defines a one-line input field for text input:</p><br>
+		<h2>Example 1:</h2>
+		 <div class="square">
+			 &lt;form&gt;<br>
+  First name:<br>
+  &lt;input type="text" name="firstname"&gt;<br>
+  Last name:<br>
+  &lt;input type="text" name="lastname"&gt;<br>
+&lt;/form&gt;
+</div><br>
+<a href="#output">
+           <button>Output > ></button>
+        </a>
+<hr width=280%>
+<h3><u>Radio Button Input</u></h3>
+<p>&lt;input type="radio"&gt; defines a radio button. <br>
+Radio buttons let a user select ONE of a limited number of choices:</p><br>
+<h2>Example 2:</h2>
+<div class="square">
+  &lt;form&gt;<br>
+ &lt;input type="radio" name="gender" value="male"&gt; Male<br>
+ &lt;input type="radio" name="gender" value="female"&gt; Female<br>
+ &lt;input type="radio" name="gender" value="other"&gt; Other<br>
+&lt;/form&gt;
+</div>
+<br>
+<a href="#output">
+           <button>Output > ></button>
+        </a>
+<hr width=280%>
+<h3><u>Checkbox</u></h3>
+	 Checkboxes allows the user to select one or more option from a pre-defined set of options. It is created using an &lt;input&gt; element whose type attribute has a value of checkbox<br>
+	 <h2>Example 3:</h2>
+ <div class="square">
+	&lt; form &gt;<br>
+    &lt;input type="checkbox" name="sports" id="soccer"&gt;<br>
+    &lt;input type="checkbox" name="sports" id="cricket"&gt;<br>
+    &lt;input type="checkbox" name="sports" id="baseball"&gt;<br>
+&lt;/form&gt;
+</div>
+<br>
+<a href="#output">
+           <button>Output > ></button>
+        </a>
+<hr width=280%>
+<h3><u>Password</u></h3>
+This is also a single-line text input controls created using an &lt;input&gt; element whose type attribute has a value of password.
+Here's an example of a single-line password input used to take user password:<br>
+<h2>Example 4:</h2>
+ <div class="square">
+	&lt; form &gt;<br>
+  &lt;input type="password" name="user-password" id="user-pwd"&gt;<br>
+&lt;/form&gt;
+</div>
+<br>
+<a href="#output">
+           <button>Output > ></button>
+        </a>
+<hr width=280%>
+<div>
+<h3><u>Submit and Reset Button</u></h3>
+<p>	A submit button is used to send the form data to a web server. When submit button is clicked the form data is sent to the file specified in the form's action attribute to process the submitted data. A reset button resets all the forms control to default values.</p><br>
+<h2>Example 5:</h2>
+<div class="square">
+    &lt;input type="text" name="first-name" id="first-name"&gt;<br>
+    &lt;input type="submit" value="Submit"&gt;<br>
+    &lt;input type="reset" value="Reset"&gt;<br>
+    &lt;form&gt;
+	</p>
+</div>
+<br>
+<a href="#output">
+           <button>Output > ></button>
+        </a>
+<hr width=280%>
+<div>
+	<h3> When to use GET and POST? </h3>
+	<p>The default method when submitting form data is GET.
+However, when GET is used, the submitted form data will be visible in the page address field:</p>
+<p>Always use POST if the form data contains sensitive or personal information. The POST method does not display the submitted form data in the page address field.</p>
+</div>
+<hr width=280%>
+<div id="output"></div>
+    <h1 style="background:#BABDB7;width:200px;padding: 5px;box-shadow: 3px 2px 4px rgba(0, 0, 0, .4);letter-spacing: 1px;">Outputs</h1>
+      <h3>Output 1:</h3>
+      <div id=output-example>
+      	<form>
+			First name:
+			<input type="text" name="firstname">
+			Last name:
+			<input type="text" name="lastname">
+			</form>
+      </div>
+      <h3>Output 2:</h3>
+      <div id=output-example>
+      	<form>
+			<form>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other
+</form>
+      </div>
+      <h3>Output 3:</h3>
+      <div id=output-example>
+      	<form>
+<input type="checkbox" name="sports" id="soccer">Soccer
+<input type="checkbox" name="sports" id="cricket">Cricket
+<input type="checkbox" name="sports" id="baseball">Baseball
+</form>
+      </div>
+      <h3>Output 4:</h3>
+      <div id=output-example>
+      	<form>
+<input type="password" name="user-password" id="user-pwd"> Password
+</form>
+      </div>
+      <h3>Output 5:</h3>
+      <div id=output-example>
+      	<form>
+<input type="text" name="first-name" id="first-name">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+<form>
+      </div><br>
+      <hr>
+
+<div>
+	<h1> To make things more clear, you can refer to the following video..</h1>
+	<iframe width="420" height="315"
+ src="https://www.youtube.com/embed/D4jj3HHrnSU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</iframe>
+</div>
+<div id="bar"><center>
+	<a href="https://www.facebook.com/shruti.keshri.12" target="_blank"><i class="fa fa-facebook"></i></a>&nbsp  &nbsp &nbsp &nbsp &nbsp
+	<a href="https://www.instagram.com/shrutaay_k" target="_blank"><i class="fa fa-instagram"></i></a>&nbsp &nbsp &nbsp &nbsp &nbsp
+		<a href="https://plus.google.com/u/0/+shrutikeshri" target="_blank"><i class="fa fa-envelope"></i></a><br><br>
+<p>Designed by Shruti Keshri &nbsp<i class="fa fa-copyright"></i> 2018<br>
+All Rights Reserved<br></p>
+</div>
+</center>
+</html>
+
+</body>
+</html>
